@@ -1,0 +1,31 @@
+.switch_theme_div {
+  position: absolute;
+  right: 95px;
+  top: 15px;
+
+  @media screen and (min-width: 480px) {
+    right: 95px;
+    top: 15px;
+  }
+  @media screen and (min-width: 768px) {
+    right: 95px;
+    top: 15px;
+  }
+  @media screen and (min-width: 1280px) {
+    right: 95px;
+    top: 15px;
+  }
+}
+
+ .btnD{
+  color: var(--secondary-text-color);
+  font-size: 35px;
+  background: transparent;
+  border: none;
+ }
+  .btnL {
+    color: white;
+    font-size: 35px;
+    background: transparent;
+    border: none;
+  }
