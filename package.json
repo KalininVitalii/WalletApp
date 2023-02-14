@@ -2,7 +2,7 @@
   "name": "wallet-reactor",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://AlexeyKiselyov.github.io/wallet-reactor/",
+  "homepage": "https://kalininvitalii.github.io/WalletApp/",
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",

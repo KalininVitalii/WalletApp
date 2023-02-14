@@ -18,30 +18,36 @@ const token = {
  * body: { name, email, password }
  * После успешной регистрации добавляем токен в HTTP-заголовок
  */
-const register = createAsyncThunk('/auth/sign-up', async (credentials, thunkAPI) => {
-  try {
-    const { data } = await axios.post('/auth/sign-up', credentials);
-    token.set(data.token);
-    return data;
-  } catch (error) {
-    return thunkAPI.rejectWithValue(error.message);
+const register = createAsyncThunk(
+  '/auth/sign-up',
+  async (credentials, thunkAPI) => {
+    try {
+      const { data } = await axios.post('/auth/sign-up', credentials);
+      token.set(data.token);
+      return data;
+    } catch (error) {
+      return thunkAPI.rejectWithValue(error.message);
+    }
   }
-});
+);
 
 /*
  * POST @ /users/login
  * body: { email, password }
  * После успешного логина добавляем токен в HTTP-заголовок
  */
-const logIn = createAsyncThunk('/auth/sign-in', async (credentials, thunkAPI) => {
-  try {
-    const { data } = await axios.post('/auth/sign-in', credentials);
-    token.set(data.token);
-    return data;
-  } catch (error) {
-    return thunkAPI.rejectWithValue(error.message);
+const logIn = createAsyncThunk(
+  '/auth/sign-in',
+  async (credentials, thunkAPI) => {
+    try {
+      const { data } = await axios.post('/auth/sign-in', credentials);
+      token.set(data.token);
+      return data;
+    } catch (error) {
+      return thunkAPI.rejectWithValue(error.message);
+    }
   }
-});
+);
 
 /*
  * POST @ /users/logout
